@@ -1,0 +1,103 @@
+/* criando uma variavel global para o css */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+:root {
+    --primary-color: hsl(242deg 30% 38% / 88%);
+    --secondary-color: #fff;
+    --primary-color-darker: rgb(9, 48, 56);
+    --h1-color: #ccc;
+}
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background: url('/assets/img/nebula.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+h1 {
+    color: var(--h1-color);
+    text-align: center;
+    margin: 1em 0 1em;
+}
+.container {
+    max-width:36em;
+    margin: 15% auto;
+    background: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+.container-content {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.input-tarefa {
+    width: 100%;
+    height: 2.5em;
+    border-radius: 5px;
+    border-color: var(--secondary-color);
+    border-radius: 5px;
+}
+.tarefa {
+    color: var(--secondary-color);
+    margin: 1em 1em;
+}
+.btn-tarefa, .apagar {
+    background-color: hsl(242deg 50% 74%);
+    color: #fff;
+    margin-left: 1em;
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    font-size: 0.75em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+.apagar {
+    font-weight: bold;
+}
+/**Respnsividade**/
+
+/* Mobile in Portrait Mode */
+@media only screen and (max-width:320px) {
+    .container {
+        max-width: 14em;
+        margin: 50% auto;
+    }
+}
+/* Mobile in Landscape Mode*/
+@media only screen and (min-width:321px) and (max-width:480px) {
+    .container {
+        max-width: 15em;
+        margin: 50% auto;
+    }
+}
+/*Tablets*/
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .container {
+        margin: 40% auto;
+    }
+}
+/*Desktop and Laptop Computers*/
+@media only screen and (min-width:1224px) {
+    .container {
+        max-width:36em;
+        margin: 15% auto;
+    }
+}
+/*Very Large Screen Device*/
+@media only screen and (min-width:1824px) {
+    .container {
+        max-width:40em;
+        margin: 15% auto;
+    }
+}
+
