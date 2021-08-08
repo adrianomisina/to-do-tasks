@@ -14,7 +14,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 body {
-    background: url('assets/img/nebula.jpg');
+    background: url('/assets/img/nebula.jpg');
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
